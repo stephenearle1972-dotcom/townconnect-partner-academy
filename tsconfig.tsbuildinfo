@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/chatinterface.tsx","./src/components/messagebubble.tsx","./src/components/passwordgate.tsx","./src/components/voiceinput.tsx","./src/knowledge/trainingcontent.ts","./src/services/geminiservice.ts","./src/services/speechservice.ts"],"version":"5.6.3"}
