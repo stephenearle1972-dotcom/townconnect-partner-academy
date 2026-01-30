@@ -67,26 +67,15 @@ export const startListening = (
 
   const recognition = new SpeechRecognitionClass();
   recognition.lang = 'en-ZA'; // South African English, also understands Afrikaans
-  recognition.continuous = true;
-  recognition.interimResults = true;
+  recognition.continuous = false; // Single utterance mode to avoid stuttering
+  recognition.interimResults = false; // Only final results to prevent repeated words
 
   recognition.onresult = (event: SpeechRecognitionEvent) => {
-    let finalTranscript = '';
-    let interimTranscript = '';
-
-    for (let i = 0; i < event.results.length; i++) {
-      const result = event.results[i];
-      if (result.isFinal) {
-        finalTranscript += result[0].transcript;
-      } else {
-        interimTranscript += result[0].transcript;
-      }
-    }
-
-    if (finalTranscript) {
-      onResult(finalTranscript, true);
-    } else if (interimTranscript) {
-      onResult(interimTranscript, false);
+    // Get the final transcript from the last result
+    const lastResult = event.results[event.results.length - 1];
+    if (lastResult && lastResult.isFinal) {
+      const transcript = lastResult[0].transcript;
+      onResult(transcript, true);
     }
   };
 

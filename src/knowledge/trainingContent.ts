@@ -71,6 +71,18 @@ Annual payment = 2 months free (10 months price)
 ### No Free Tier
 Minimum is Standard package. Micro tier was removed due to operational issues.
 
+### Community Features Pricing
+- Classifieds: From R29 per ad
+- Property listings: From R49 per listing
+- Events: Free to post
+- Jobs: From R99 per listing
+
+### Multi-Business Discounts
+Partners CAN offer discounts when a business owner lists multiple businesses:
+- 2 businesses: 20% discount on total
+- 3 or more businesses: 30% discount on total
+This is at the partner's discretion to close deals. Use it strategically to secure larger clients.
+
 ---
 
 ## SECTION 4: PAYMENTS AND REVENUE
