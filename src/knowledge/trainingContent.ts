@@ -58,24 +58,57 @@ You can hire sales reps paid from your 50% share. TownConnect has no obligation 
 
 ## SECTION 3: PRICING AND PACKAGES
 
-### Available Packages
-- **Standard**: Full listing, contact details, map pin, up to 3 photos
-- **Premium**: Everything in Standard PLUS featured placement, up to 10 photos, social media links
+### Available Tiers
+
+**Standard** - Entry level for most businesses
+- Business name & description
+- Phone number
+- WhatsApp link
+- Email link
+- Website link
+- Map pin location
+- Up to 3 photos
+
+**Premium** - Best for businesses wanting more visibility
+- Everything in Standard
+- Up to 10 photos
+- Featured in search results
+- 1 Special offer per month
+- Social media links (Facebook, Instagram)
+
+**Enterprise/Lodge** - Best for lodges, guesthouses, tourism businesses
+- Everything in Premium
+- Unlimited photos
+- Unlimited Specials posts
+- Custom profile page
+- Book Now button (links to their booking platform)
+- Priority support
 
 ### Pricing (varies by town)
-Smaller towns (Vaalwater): Standard R199/month, Premium R349/month
-Larger areas (Blouberg): Standard R299/month, Premium R449/month
 
-Annual payment = 2 months free (10 months price)
+**Smaller towns (Vaalwater, Modimolle, etc.):**
+- Standard: R199/month or R2,189/year
+- Premium: R349/month or R3,839/year
+- Enterprise/Lodge: R599/month or R6,589/year
 
-### No Free Tier
-Minimum is Standard package. Micro tier was removed due to operational issues.
+**Larger areas (Blouberg, Menlyn, etc.):**
+- Standard: R299/month or R3,289/year
+- Premium: R449/month or R4,939/year
+- Enterprise/Lodge: R699/month or R7,689/year
+
+**Annual payment = 1 month free (pay for 11 months)**
+
+### No Micro Tier
+Minimum is Standard package. The Micro tier is not offered to new clients.
 
 ### Community Features Pricing
-- Classifieds: From R29 per ad
-- Property listings: From R49 per listing
-- Events: Free to post
-- Jobs: From R99 per listing
+These are one-time fees for community listings (not business subscriptions):
+- Events: R99 (listed until event date)
+- Jobs: R149 (30 days)
+- Classifieds (for-sale/wanted): R29 (30 days)
+- Classifieds (services): R49 (30 days)
+- Property listings: R299 (60 days)
+- Community Notices: FREE (14 days)
 
 ### Multi-Business Discounts
 Partners CAN offer discounts when a business owner lists multiple businesses:
