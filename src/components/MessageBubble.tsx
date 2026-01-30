@@ -22,31 +22,78 @@ export default function MessageBubble({ role, content }: MessageBubbleProps) {
     }
   };
 
+  // Parse inline markdown (links, bold) in a string
+  const parseInlineMarkdown = (text: string, keyPrefix: string): (string | JSX.Element)[] => {
+    const parts: (string | JSX.Element)[] = [];
+    // Combined regex for links and bold
+    const inlineRegex = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = inlineRegex.exec(text)) !== null) {
+      // Add text before match
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
+      }
+
+      if (match[1] && match[2]) {
+        // Link: [text](url)
+        parts.push(
+          <a
+            key={`${keyPrefix}-link-${match.index}`}
+            href={match[2]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-forest underline hover:text-forest-dark font-medium"
+          >
+            {match[1]}
+          </a>
+        );
+      } else if (match[3]) {
+        // Bold: **text**
+        parts.push(
+          <strong key={`${keyPrefix}-bold-${match.index}`}>{match[3]}</strong>
+        );
+      }
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    // Add remaining text
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+
+    return parts.length > 0 ? parts : [text];
+  };
+
   // Format content with markdown-like styling
   const formatContent = (text: string) => {
     // Split by newlines and process each line
     const lines = text.split('\n');
 
     return lines.map((line, index) => {
+      const keyPrefix = `line-${index}`;
+
       // Handle headers
       if (line.startsWith('### ')) {
         return (
           <h4 key={index} className="font-bold text-sm mt-3 mb-1">
-            {line.replace('### ', '')}
+            {parseInlineMarkdown(line.replace('### ', ''), keyPrefix)}
           </h4>
         );
       }
       if (line.startsWith('## ')) {
         return (
           <h3 key={index} className="font-bold mt-3 mb-1">
-            {line.replace('## ', '')}
+            {parseInlineMarkdown(line.replace('## ', ''), keyPrefix)}
           </h3>
         );
       }
       if (line.startsWith('# ')) {
         return (
           <h2 key={index} className="font-bold text-lg mt-3 mb-1">
-            {line.replace('# ', '')}
+            {parseInlineMarkdown(line.replace('# ', ''), keyPrefix)}
           </h2>
         );
       }
@@ -55,7 +102,7 @@ export default function MessageBubble({ role, content }: MessageBubbleProps) {
       if (/^\d+\.\s/.test(line)) {
         return (
           <p key={index} className="ml-4 my-0.5">
-            {line}
+            {parseInlineMarkdown(line, keyPrefix)}
           </p>
         );
       }
@@ -64,35 +111,7 @@ export default function MessageBubble({ role, content }: MessageBubbleProps) {
       if (line.startsWith('- ') || line.startsWith('• ')) {
         return (
           <p key={index} className="ml-4 my-0.5">
-            • {line.replace(/^[-•]\s/, '')}
-          </p>
-        );
-      }
-
-      // Handle bold text with **
-      let processedLine = line;
-      const boldRegex = /\*\*([^*]+)\*\*/g;
-      const parts: (string | JSX.Element)[] = [];
-      let lastIndex = 0;
-      let match;
-
-      while ((match = boldRegex.exec(line)) !== null) {
-        if (match.index > lastIndex) {
-          parts.push(line.substring(lastIndex, match.index));
-        }
-        parts.push(
-          <strong key={`bold-${index}-${match.index}`}>{match[1]}</strong>
-        );
-        lastIndex = match.index + match[0].length;
-      }
-
-      if (parts.length > 0) {
-        if (lastIndex < line.length) {
-          parts.push(line.substring(lastIndex));
-        }
-        return (
-          <p key={index} className="my-1">
-            {parts}
+            • {parseInlineMarkdown(line.replace(/^[-•]\s/, ''), keyPrefix)}
           </p>
         );
       }
@@ -102,10 +121,10 @@ export default function MessageBubble({ role, content }: MessageBubbleProps) {
         return <div key={index} className="h-2" />;
       }
 
-      // Regular text
+      // Regular text with inline formatting
       return (
         <p key={index} className="my-1">
-          {processedLine}
+          {parseInlineMarkdown(line, keyPrefix)}
         </p>
       );
     });
