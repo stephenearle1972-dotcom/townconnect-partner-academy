@@ -12,6 +12,33 @@ South Africans prefer WhatsApp over websites for finding local services. Data co
 ### Languages Supported
 The WhatsApp bot supports English, Afrikaans, and Sepedi. Users can search in any of these languages.
 
+---
+
+## IMPORTANT NUMBERS
+
+- **TownConnect Support** (escalation): 068 898 6081 (Stephen)
+- **Bot Number** (for public searches): Varies by town - check your town config
+- **Your Partner Number** (for sales/support): Your personal WhatsApp number
+- **Bank Account**: FNB, SP Earle, 63055696604
+
+---
+
+## WHAT TOWNCONNECT DOES AND DOESN'T DO
+
+**What TownConnect Does:**
+- List your business on the website and WhatsApp bot
+- Update listing details on request
+- Share search/appearance stats when available
+- Provide ongoing tech support
+
+**What TownConnect Doesn't Do:**
+- Guarantee leads or customers
+- Run your social media pages
+- Offer exclusivity (unless stated in writing)
+- Provide refunds for unused months
+
+---
+
 ### What Each Town Gets
 1. Branded website with business directory, map, events, jobs, classifieds, property listings
 2. AI-powered WhatsApp bot for instant business search
@@ -99,7 +126,10 @@ You can hire sales reps paid from your 50% share. TownConnect has no obligation 
 **Annual payment = 1 month free (pay for 11 months)**
 
 ### No Micro Tier
-Minimum is Standard package. The Micro tier is not offered to new clients.
+We do not offer a Micro tier. The minimum package is Standard. Do not mention Micro, R50, or R99 pricing to clients.
+
+### Pricing Note
+Pricing varies by market. Vaalwater uses R199/month (Standard). Other towns like Blouberg start at R299/month. Always check your town's specific pricing with TownConnect before quoting.
 
 ### Community Features Pricing
 These are one-time fees for community listings (not business subscriptions):
@@ -153,7 +183,9 @@ Never promise without TownConnect approval. Refunds are shared 50/50.
 ## SECTION 5: SALES TECHNIQUES
 
 ### Most Effective Method
-On-foot visits. Walk into businesses, give 30-second pitch, do live demo. Field testing: 35 businesses approached, 100% interested at R200/month.
+On-foot visits. Walk into businesses, give 30-second pitch, do live demo.
+
+**Vaalwater Case Study (October 2025):** 35 businesses approached on foot showed interest at R200/month. Actual results vary by town, approach method, and local market conditions.
 
 ### The 30-Second Pitch
 "Hi, I'm [Name] from [Town]Connect. We're building the local WhatsApp business directory. When someone types 'plumber' or '[their service]' into our bot, your business shows up instantly. Unlike Facebook where people scroll, our users are actively looking. It's R[X] per month. Can I show you how it works?"
@@ -190,7 +222,9 @@ I'd like to add [Business Name] so locals can find you instantly when they need 
 Can I send you more info?
 
 [Your Name]
-[Your Number]"
+[Your Number]
+
+If you're not interested, just reply 'no' and I won't message again."
 
 ### Payment Request Script
 "Great! Here are the payment details:
@@ -228,7 +262,9 @@ Any updates needed, just let me know."
 
 Happy to answer any questions about the listing. Most local businesses find the WhatsApp visibility really valuable.
 
-Let me know if you'd like to chat."
+Let me know if you'd like to chat.
+
+If you're not interested, just reply 'no' and I won't message again."
 
 ### Graceful Decline Response
 "No problem at all - thanks for letting me know.
@@ -303,6 +339,8 @@ If you need more options, our local directory has a few others: save 072 XXX XXX
 Required (minimum): Business name, phone number, category
 Recommended: WhatsApp, email, address, description, website/Facebook, logo/photo
 
+**POPIA Permission:** When collecting details, say: "Can I use these details to publish your listing on our website and WhatsApp directory? You can ask for changes or removal anytime."
+
 **Phase B: Submit to TownConnect**
 Send via WhatsApp (068 898 6081) or email (hello@townconnect.co.za):
 
@@ -329,11 +367,17 @@ Facebook: [URL]
 
 1. Count cash in front of client
 2. Confirm amount and package verbally
-3. Issue receipt immediately
+3. Issue receipt immediately with receipt number
 4. Deposit within 48 hours to FNB account (reference: [town]-[businessname]-cash)
 5. Send proof of deposit to TownConnect
 6. Record in your tracking spreadsheet
 7. Confirm with client
+
+**Receipt Numbering Format:** TC-[TOWN CODE]-[SEQUENTIAL]
+Examples: TC-VAA-0001 (Vaalwater), TC-BLO-0001 (Blouberg), TC-PAL-0001 (Port Alfred)
+
+**Record Keeping:** Store photo of receipt AND deposit slip in a monthly folder.
+Folder structure: Google Drive > TownConnect > [Town] > Receipts > 2026-01
 
 ### Monthly Reconciliation
 
