@@ -81,10 +81,28 @@ export default function ChatInterface() {
               <h2 className="text-xl font-bold text-gray-800 mb-2">
                 Welcome to Partner Academy
               </h2>
-              <p className="text-gray-500 mb-8 max-w-md mx-auto">
+              <p className="text-gray-500 mb-6 max-w-md mx-auto">
                 Ask me anything about TownConnect operations, sales techniques,
                 payments, compliance, or any other partner questions.
               </p>
+
+              {/* Source documents reference */}
+              <div className="bg-forest/5 border border-forest/20 rounded-xl p-4 mb-8 max-w-md mx-auto text-left">
+                <p className="text-gray-700 text-sm mb-2">
+                  <span className="mr-1">📚</span>
+                  <strong>I'm trained on these official documents:</strong>
+                </p>
+                <ul className="text-gray-600 text-sm ml-6 space-y-1">
+                  <li>• Area Partner Training Manual</li>
+                  <li>• Sales Scripts</li>
+                  <li>• Process Guides</li>
+                  <li>• Marketing Conduct Guide</li>
+                  <li>• FAQ</li>
+                </ul>
+                <p className="text-gray-500 text-xs mt-3 italic">
+                  Everything I tell you comes from these materials.
+                </p>
+              </div>
 
               {/* Quick start suggestions */}
               <div className="grid gap-3 max-w-md mx-auto">
