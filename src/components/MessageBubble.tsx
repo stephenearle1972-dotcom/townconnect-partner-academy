@@ -1,6 +1,12 @@
-import { Volume2, VolumeX } from 'lucide-react';
+import { Volume2, VolumeX, Loader2 } from 'lucide-react';
 import { useState } from 'react';
 import { speakText, stopSpeaking, isSpeechSynthesisSupported } from '../services/speechService';
+import {
+  isElevenLabsConfigured,
+  speakWithElevenLabs,
+  stopAudio,
+  getCachedAudio,
+} from '../services/elevenLabsService';
 
 interface MessageBubbleProps {
   role: 'user' | 'assistant';
@@ -9,14 +15,68 @@ interface MessageBubbleProps {
 
 export default function MessageBubble({ role, content }: MessageBubbleProps) {
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const isUser = role === 'user';
-  const canSpeak = !isUser && isSpeechSynthesisSupported();
 
-  const handleSpeak = () => {
-    if (isSpeaking) {
+  // Can speak if it's an assistant message and either ElevenLabs or browser TTS is available
+  const canSpeak = !isUser && (isElevenLabsConfigured() || isSpeechSynthesisSupported());
+
+  // Check if we have cached audio (for instant playback indicator)
+  const hasCachedAudio = isElevenLabsConfigured() && getCachedAudio(content) !== null;
+
+  const handleSpeak = async () => {
+    // If currently speaking or loading, stop
+    if (isSpeaking || isLoading) {
+      stopAudio();
       stopSpeaking();
       setIsSpeaking(false);
+      setIsLoading(false);
+      return;
+    }
+
+    // Try ElevenLabs first if configured
+    if (isElevenLabsConfigured()) {
+      // If cached, no loading needed
+      if (hasCachedAudio) {
+        setIsSpeaking(true);
+        try {
+          await speakWithElevenLabs(
+            content,
+            undefined,
+            () => setIsSpeaking(false),
+            (error) => console.warn('ElevenLabs warning:', error)
+          );
+        } catch {
+          // Fall back to browser TTS
+          fallbackToBrowserTTS();
+        }
+      } else {
+        // Show loading while generating
+        setIsLoading(true);
+        try {
+          await speakWithElevenLabs(
+            content,
+            () => {
+              setIsLoading(false);
+              setIsSpeaking(true);
+            },
+            () => setIsSpeaking(false),
+            (error) => console.warn('ElevenLabs warning:', error)
+          );
+        } catch {
+          setIsLoading(false);
+          // Fall back to browser TTS
+          fallbackToBrowserTTS();
+        }
+      }
     } else {
+      // Use browser TTS directly
+      fallbackToBrowserTTS();
+    }
+  };
+
+  const fallbackToBrowserTTS = () => {
+    if (isSpeechSynthesisSupported()) {
       setIsSpeaking(true);
       speakText(content, () => setIsSpeaking(false));
     }
@@ -146,10 +206,25 @@ export default function MessageBubble({ role, content }: MessageBubbleProps) {
         {canSpeak && (
           <button
             onClick={handleSpeak}
-            className="absolute -bottom-2 -right-2 p-2 bg-gold hover:bg-gold-dark rounded-full shadow-md transition-colors"
-            title={isSpeaking ? 'Stop speaking' : 'Read aloud'}
+            disabled={isLoading}
+            className={`absolute -bottom-2 -right-2 p-2 rounded-full shadow-md transition-all ${
+              isLoading
+                ? 'bg-gold/70 cursor-wait'
+                : isSpeaking
+                ? 'bg-red-500 hover:bg-red-600'
+                : 'bg-gold hover:bg-gold-dark'
+            }`}
+            title={
+              isLoading
+                ? 'Generating voice...'
+                : isSpeaking
+                ? 'Stop speaking'
+                : 'Read aloud'
+            }
           >
-            {isSpeaking ? (
+            {isLoading ? (
+              <Loader2 className="w-4 h-4 text-white animate-spin" />
+            ) : isSpeaking ? (
               <VolumeX className="w-4 h-4 text-white" />
             ) : (
               <Volume2 className="w-4 h-4 text-white" />
