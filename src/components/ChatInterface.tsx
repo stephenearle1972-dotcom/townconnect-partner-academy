@@ -79,11 +79,10 @@ export default function ChatInterface() {
                 <GraduationCap className="w-10 h-10 text-forest" />
               </div>
               <h2 className="text-xl font-bold text-gray-800 mb-2">
-                Welcome to Partner Academy
+                Welcome to the TownConnect Partner Academy! 👋
               </h2>
               <p className="text-gray-500 mb-6 max-w-md mx-auto">
-                Ask me anything about TownConnect operations, sales techniques,
-                payments, compliance, or any other partner questions.
+                I'm your AI training assistant, trained on the official TownConnect training materials. I can help with sales techniques, pricing questions, compliance, rep management, and day-to-day operations.
               </p>
 
               {/* Source documents reference */}
@@ -93,11 +92,13 @@ export default function ChatInterface() {
                   <strong>I'm trained on these official documents:</strong>
                 </p>
                 <ul className="text-gray-600 text-sm ml-6 space-y-1">
-                  <li>• Area Partner Training Manual</li>
-                  <li>• Sales Scripts</li>
-                  <li>• Process Guides</li>
-                  <li>• Marketing Conduct Guide</li>
-                  <li>• FAQ</li>
+                  <li>📚 Area Partner Training Manual</li>
+                  <li>💬 Sales Scripts & Objection Handling</li>
+                  <li>📋 Process Guides & Procedures</li>
+                  <li>📢 Marketing Conduct Guide</li>
+                  <li>❓ Frequently Asked Questions</li>
+                  <li>👥 Rep Management Guide</li>
+                  <li>💰 Cash Handling Procedures</li>
                 </ul>
                 <p className="text-gray-500 text-xs mt-3 italic">
                   Everything I tell you comes from these materials.
@@ -113,16 +114,16 @@ export default function ChatInterface() {
                   <span className="text-forest font-medium">"What's the 30-second pitch?"</span>
                 </button>
                 <button
-                  onClick={() => handleSubmit("How does the revenue split work?")}
+                  onClick={() => handleSubmit("How do I handle cash from reps?")}
                   className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
                 >
-                  <span className="text-forest font-medium">"How does the revenue split work?"</span>
+                  <span className="text-forest font-medium">"How do I handle cash from reps?"</span>
                 </button>
                 <button
-                  onClick={() => handleSubmit("What's the 48-hour rule?")}
+                  onClick={() => handleSubmit("What's the list first ask later approach?")}
                   className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
                 >
-                  <span className="text-forest font-medium">"What's the 48-hour rule?"</span>
+                  <span className="text-forest font-medium">"What's the list first ask later approach?"</span>
                 </button>
               </div>
             </div>

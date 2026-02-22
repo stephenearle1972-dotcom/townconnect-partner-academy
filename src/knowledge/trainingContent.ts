@@ -10,7 +10,31 @@ TownConnect is a WhatsApp-first hyperlocal business directory serving small Sout
 South Africans prefer WhatsApp over websites for finding local services. Data costs make browsing websites expensive, but WhatsApp messages are often free or very cheap. People already use WhatsApp daily and trust it.
 
 ### Languages Supported
-The WhatsApp bot supports English, Afrikaans, and Sepedi. Users can search in any of these languages.
+The WhatsApp bot supports English, Afrikaans, and Sepedi. The bot auto-detects the user's language and responds in the same language. This is important for Limpopo towns (Sepedi is widely spoken) and Western Cape/Afrikaans communities.
+
+### Current Scale (February 2026)
+TownConnect operates 11 live sites across 6 provinces. All sites deploy from one shared codebase (multi-tenant architecture). Each town has its own Google Sheet for business listings.
+
+**Live Towns:**
+| Town | Region | WhatsApp Bot | Notes |
+|------|--------|-------------|-------|
+| Vaalwater | Limpopo | Active | Flagship site, custom domain vaalwaterconnect.co.za |
+| Menlyn | Gauteng | Active | Pretoria East |
+| Port Alfred | Eastern Cape | Active (Deirdre's number) | Operator: Deirdre Simpson |
+| Modimolle | Limpopo | Not yet | — |
+| Blouberg | Western Cape | Active | Premium pricing market |
+| Parklands | Western Cape | Active (Deirdre's number) | Operator: Helena Otto |
+| Garsfontein | Gauteng | Not yet | Pretoria East |
+| Lephalale | Limpopo | Not yet | — |
+| Stellenbosch | Western Cape | Active (Deirdre's number) | Newest |
+| Durbanville | Western Cape | Not yet | — |
+| Paarl | Western Cape | Not yet | — |
+
+**Key facts:**
+- 11 live sites across 6 provinces
+- 4 active WhatsApp bots (Vaalwater, Blouberg, Menlyn, Parklands — plus Port Alfred and Stellenbosch share Deirdre's number)
+- All sites deploy from one shared codebase (multi-tenant architecture)
+- Each town has its own Google Sheet for business listings
 
 ---
 
@@ -40,7 +64,7 @@ The WhatsApp bot supports English, Afrikaans, and Sepedi. Users can search in an
 ---
 
 ### What Each Town Gets
-1. Branded website with business directory, map, events, jobs, classifieds, property listings
+1. Branded website with business directory, map, events, jobs, classifieds, property listings, clubs & organizations
 2. AI-powered WhatsApp bot for instant business search
 3. Facebook page for community engagement
 4. Google Business Profile for local search visibility
@@ -78,8 +102,13 @@ Initial term: 24 months. May exit after 12 months with 60 days written notice.
 
 TownConnect considers economic conditions, market size, and demonstrated effort when evaluating.
 
-### Hiring Help
-You can hire sales reps paid from your 50% share. TownConnect has no obligation to your employees.
+### Founding Partner Benefits
+Area Partners who sign up during the growth phase (before 50 towns are live) are classified as Founding Partners and receive these benefits:
+
+- **Locked-in renewal rates:** Annual renewal increases capped at 5%, with a maximum renewal fee between R6,000 and R60,000 (depending on territory size)
+- **Priority for adjacent territories:** If neighboring towns open up, founding partners get first option
+- **Lower license fee:** R19,999 (compared to potentially higher fees as the network proves its value)
+- **Direct access to Stephen (founder):** Founding partners have a direct line to the founder for support and strategy
 
 ---
 
@@ -94,34 +123,38 @@ You can hire sales reps paid from your 50% share. TownConnect has no obligation 
 - Email link
 - Website link
 - Map pin location
-- Up to 3 photos
+- Up to 8 photos
 
 **Premium** - Best for businesses wanting more visibility
 - Everything in Standard
-- Up to 10 photos
-- Featured in search results
-- 1 Special offer per month
 - Social media links (Facebook, Instagram)
+- Up to 20 photos
+- 4 Specials/promotions per month
+- Featured in search results
 
 **Enterprise/Lodge** - Best for lodges, guesthouses, tourism businesses
 - Everything in Premium
 - Unlimited photos
 - Unlimited Specials posts
-- Custom profile page
-- Book Now button (links to their booking platform)
+- Booking/menu links (links to their booking platform)
+- Sponsored placements
 - Priority support
 
-### Pricing (varies by town)
+### Standard Pricing (Most Towns)
 
-**Smaller towns (Vaalwater, Modimolle, etc.):**
-- Standard: R199/month or R2,189/year
-- Premium: R349/month or R3,839/year
-- Enterprise/Lodge: R599/month or R6,589/year
+| Tier | Monthly | Annual (1 month free) | Key Features |
+|------|---------|----------------------|--------------|
+| Standard | R199/month | R2,189/year | Full listing, phone + WhatsApp + email, map pin, up to 8 photos |
+| Premium | R349/month | R3,839/year | Everything in Standard + social links, up to 20 photos, 4 specials/month, featured in search |
+| Enterprise/Lodge | R599/month | R6,589/year | Everything in Premium + booking/menu links, unlimited photos, sponsored placements |
 
-**Larger areas (Blouberg, Menlyn, etc.):**
-- Standard: R299/month or R3,289/year
-- Premium: R449/month or R4,939/year
-- Enterprise/Lodge: R699/month or R7,689/year
+### Premium Market Pricing (Blouberg, and potentially other high-value suburbs)
+
+| Tier | Monthly | Annual |
+|------|---------|--------|
+| Standard | R299/month | R3,289/year |
+| Premium | R449/month | R4,939/year |
+| Enterprise | R699/month | R7,689/year |
 
 **Annual payment = 1 month free (pay for 11 months)**
 
@@ -129,16 +162,20 @@ You can hire sales reps paid from your 50% share. TownConnect has no obligation 
 We do not offer a Micro tier. The minimum package is Standard. Do not mention Micro, R50, or R99 pricing to clients.
 
 ### Pricing Note
-Pricing varies by market. Vaalwater uses R199/month (Standard). Other towns like Blouberg start at R299/month. Always check your town's specific pricing with TownConnect before quoting.
+Pricing varies by market. Most towns use standard pricing (R199/month for Standard). Premium markets like Blouberg start at R299/month. Always check your town's specific pricing with TownConnect before quoting.
 
 ### Community Features Pricing
 These are one-time fees for community listings (not business subscriptions):
-- Events: R99 (listed until event date)
-- Jobs: R149 (30 days)
-- Classifieds (for-sale/wanted): R29 (30 days)
-- Classifieds (services): R49 (30 days)
-- Property listings: R299 (60 days)
-- Community Notices: FREE (14 days)
+
+| Feature | Price | Duration |
+|---------|-------|----------|
+| Community Notice | FREE | 30 days |
+| Classified — Work Wanted | R29 | 30 days |
+| Classified — Personal Sale | R29 | 30 days |
+| Classified — Services | R49 | 30 days |
+| Event (all types) | R99 | Until event date |
+| Job Listing | R149 | 30 days |
+| Property Listing | R299 | 30 days |
 
 ### Multi-Business Discounts
 Partners CAN offer discounts when a business owner lists multiple businesses:
@@ -150,11 +187,23 @@ This is at the partner's discretion to close deals. Use it strategically to secu
 
 ## SECTION 4: PAYMENTS AND REVENUE
 
+### How Payments Work
+- TownConnect uses **PayFast** for online payments
+- Businesses can pay via the town website's pricing page
+- Payment options: Credit/debit card, EFT, Instant EFT
+- Area Partners can also collect cash (see Cash Handling Rules)
+
 ### Revenue Split
 50/50 on NET revenue (after PayFast ~3.5% fee)
 
-Example: R300 payment - R10.50 fee = R289.50 net
-Your share: R144.75, TownConnect share: R144.75
+### Revenue Split Calculation Example
+- Business pays R199/month
+- PayFast takes approximately 3.5% + R2 per transaction ≈ R9
+- Net revenue: approximately R190
+- Area Partner gets 50%: approximately R95
+- TownConnect gets 50%: approximately R95
+
+**Important:** The 50/50 split is on NET revenue (after payment processing fees), not on the gross amount.
 
 ### Payment Methods
 1. Card via PayFast on website (preferred)
@@ -198,8 +247,21 @@ On-foot visits. Walk into businesses, give 30-second pitch, do live demo.
 5. Search THEIR category - either they appear or "You could be first!"
 6. Let them try it themselves
 
-### "List First, Ask Later" Strategy
-Add interested businesses for free initially. Let them see their listing live. Then follow up for payment. This removes risk and proves value.
+### The "List First, Ask Later" Approach
+This has been tested and achieves nearly 100% interest rates:
+1. Walk into a business and say: "Hi, I'm [name] from [Town]Connect. We're building a free online directory for [Town]. Can I add your business? Just need your name, what you do, and a phone number."
+2. They say yes (almost always — it's free and takes 30 seconds)
+3. You add them as a basic listing immediately
+4. Follow up 1-2 days later: "Your business is now live on [Town]Connect — here's the link. Hundreds of locals are already using it. Want to upgrade to a full listing with photos and WhatsApp link for just R199/month?"
+
+**Why it works:** You're giving value FIRST. No one says no to a free listing. The upgrade conversation is easy because they can already see their business on the site.
+
+### WhatsApp Bot Demo Script
+When pitching to a business owner:
+1. Open WhatsApp on your phone
+2. Send a message to the bot: "[their service type]" (e.g., "plumber" or "restaurant")
+3. Show them the response
+4. Say: "This is how your customers find you. Right now when someone in [Town] searches for [their service], they see your competitors. Let's get you listed."
 
 ### Expected Results
 On-foot: 6-10 interested businesses per hour
@@ -277,17 +339,24 @@ All the best with [Business Name]!"
 
 ## SECTION 7: OBJECTION HANDLING
 
-### "It's too expensive"
+### "It's too expensive" / "R199 is too much"
 "I understand budget is important. Let me ask - would just ONE new customer per month be worth R[X]? Most businesses tell me one job covers the whole year's subscription."
+
+Additional responses:
+- "That's less than R7 per day. If you get just ONE new customer from the directory, it pays for itself. Most businesses get several."
+- "You can start with the Standard plan and upgrade later when you see results."
+- "We also offer annual billing — you get one month free, which brings it down to about R182/month."
 
 ### "I'm already on Google/Facebook"
 "That's great for people who search there. But think about it - when someone posts in a WhatsApp group asking 'does anyone know a good [service]?', they're not opening Google. They're asking their community. That's where we show up."
 
+### "I don't need online marketing" / "I don't need advertising"
+"Your customers are already searching on WhatsApp. We're just making sure they find YOU instead of someone else."
+"94% of South Africans with smartphones use WhatsApp daily. That's where your customers are looking."
+"This isn't advertising - it's visibility. When your neighbour asks in the community group 'who knows a good [service]?', wouldn't you want to be the answer that pops up instantly?"
+
 ### "Nobody uses WhatsApp for this"
 "Let me show you..." [Do live demo] "See? In 3 seconds, they have your number. No scrolling, no ads, no distractions."
-
-### "I don't need advertising"
-"This isn't advertising - it's visibility. When your neighbour asks in the community group 'who knows a good [service]?', wouldn't you want to be the answer that pops up instantly?"
 
 ### "My nephew does my marketing"
 "Perfect - this actually makes his job easier. When he posts about your business, people can find you instantly instead of scrolling through comments."
@@ -331,7 +400,109 @@ If you need more options, our local directory has a few others: save 072 XXX XXX
 
 ---
 
-## SECTION 9: PROCESSES
+## SECTION 9: WHATSAPP BOT FEATURES
+
+### How the Bot Works
+- Bot searches the town's business listings database
+- Returns matching businesses with name, description, phone number, WhatsApp link, and website link
+- If no match found: "No [service] listed in [Town] yet. If you know this business, please share their details."
+- Bot NEVER invents businesses — only returns what's in the database
+
+### Photo Responses for Premium Listings
+- Premium and Enterprise tier businesses can now have their photos displayed directly in WhatsApp bot responses
+- When a user searches for a service, matching premium businesses show their photo alongside contact details
+- This is a strong upsell point: "Upgrade to Premium and your business photo appears when people search on WhatsApp"
+
+### Trilingual Support
+- All bots support English, Afrikaans, and Sepedi
+- The bot auto-detects the user's language and responds in the same language
+- This is important for Limpopo towns (Sepedi is widely spoken) and Western Cape/Afrikaans communities
+
+---
+
+## SECTION 10: CLUBS & ORGANIZATIONS (NEW — February 2026)
+
+Every TownConnect site now includes a **Clubs & Organizations** directory alongside business listings. This is a FREE feature — clubs and organizations are listed at no charge.
+
+### What it includes
+Sports clubs, hobby groups, religious organizations, community groups, NGOs, school PTAs, etc. Each listing shows: name, description, contact details, meeting times/location.
+
+### How to add a club/organization
+Same process as adding a business listing, but in the Clubs & Organizations section of the Google Sheet. Partners can submit club info to Stephen for adding, or use the submission form on their town's website.
+
+### Why it matters for partners
+Partners should actively collect club/organization info during their community outreach — it builds goodwill and makes the site more valuable to residents.
+
+### Sales angle
+"We also list all local clubs and organizations for free — this makes our site THE place residents check for community info." Builds community trust and drives traffic, which benefits paying business listings.
+
+---
+
+## SECTION 11: HIRING AND MANAGING SALES REPS
+
+### When to Hire a Rep
+- Once your town site has 20+ listings and steady subscription revenue
+- When you can't personally cover all the businesses in your territory
+- When you want to grow faster without doing all the legwork yourself
+
+### How Reps Work
+- TownConnect provides an Independent Sales Rep Agreement template
+- Reps work as independent contractors (NOT employees)
+- They earn commission on businesses they sign up — paid by the Area Partner from the partner's 50% share
+- Rep commissions are a cost to the Area Partner, not to TownConnect
+
+### Recommended Commission Structure
+- **50% of first month's revenue** (strong incentive to close)
+- **40% of months 2-6** (rewards retention)
+- **30% ongoing from month 7** (trailing commission for as long as the business stays subscribed)
+- These are recommendations — partners can negotiate different rates with their reps
+
+### Cash Handling Rules (CRITICAL)
+If your reps collect cash payments from businesses:
+- **Maximum R2,000 cash per transaction** — anything over must be EFT or card
+- Reps MUST use official TownConnect receipt books (3-part: business copy, partner copy, TownConnect copy)
+- Reps must photograph every receipt and send the photo to you within 24 hours
+- Cash must be deposited into the designated account within 48 hours
+- Weekly reconciliation: match receipt book stubs against deposits
+- Any cash shortfall is the rep's personal liability
+
+### KYC (Know Your Contractor) Requirements
+Before a rep can start, you must collect and verify:
+1. **Certified copy of their ID or passport** — confirms identity
+2. **Proof of address** (utility bill or bank statement, less than 3 months old) — confirms where they live
+3. **Bank confirmation letter** — verifies the account where you'll pay commissions
+4. **SARS tax number** — confirms they're tax-registered (required for independent contractors)
+5. **VAT number** (only if they're VAT-registered, which is above R1 million turnover)
+6. **Selfie holding their ID** — remote identity verification (standard practice in South Africa)
+7. **Signed Independent Sales Rep Agreement**
+
+**Why this matters:** You're giving reps receipt books and trusting them to collect money on your behalf. If a rep disappears with cash and you don't have verified ID and address, you have no way to recover the funds. KYC protects you and your business.
+
+### Rep Red Flags — Watch Out For
+- Rep delays submitting receipt photos or depositing cash
+- Businesses complain they paid but the rep didn't process it
+- Rep makes promises to businesses that aren't in the package (e.g., "unlimited photos" on Standard tier)
+- Rep operates outside their assigned area
+- Any of these should trigger an immediate conversation and possible termination
+
+---
+
+## SECTION 12: TERRITORY TRANSITION
+
+If TownConnect has been using a rep to sign up businesses in a town, and then an Area Partner is appointed for that same territory, this is the process:
+
+### 5-Step Transition Process
+1. **Written notice** — TownConnect gives the rep 30 days' written notice that an Area Partner has been appointed
+2. **Handover period** — Rep continues earning commission on existing signed businesses during the notice period
+3. **Client transfer** — All business relationships transfer to the new Area Partner on the effective date
+4. **Trailing commission preserved** — The rep continues to earn their trailing commission on businesses THEY personally signed, even after the territory transfers. This is paid by TownConnect, not the new Area Partner
+5. **New territory options** — TownConnect offers the rep alternative territories where no Area Partner exists yet
+
+**Key point for Area Partners:** If you're appointed to a territory where a TownConnect rep has already been active, you inherit their signed businesses. The rep keeps their trailing commission on those businesses (paid by TownConnect centrally), but going forward you manage all relationships and earn your 50% on all revenue from day one.
+
+---
+
+## SECTION 13: PROCESSES
 
 ### Adding a New Listing
 
@@ -403,7 +574,7 @@ How to review:
 
 ---
 
-## SECTION 10: CLIENT MANAGEMENT
+## SECTION 14: CLIENT MANAGEMENT
 
 ### Monthly Check-In
 Contact each client monthly:
@@ -425,7 +596,7 @@ After 1+ months as a happy client:
 
 ---
 
-## SECTION 11: COMPLIANCE AND RULES
+## SECTION 15: COMPLIANCE AND RULES
 
 ### Legal Framework
 - POPIA: Data handling
@@ -461,7 +632,7 @@ For 12 months after agreement ends:
 
 ---
 
-## SECTION 12: SUPPORT AND CONTACTS
+## SECTION 16: SUPPORT AND CONTACTS
 
 ### Primary Contact
 Stephen Earle
@@ -517,6 +688,12 @@ Awaiting guidance."
 - Month 3: 200 listings
 - Month 6: 350 listings
 - Year 1: 500+ listings
+
+### Area Partner License Fee
+R19,999 once-off — includes exclusive territory rights, branded website, WhatsApp bot setup, training, ongoing support.
+
+### Founding Partner Renewal
+5% annual increase, capped between R6,000 and R60,000 maximum renewal fee.
 
 ---
 
