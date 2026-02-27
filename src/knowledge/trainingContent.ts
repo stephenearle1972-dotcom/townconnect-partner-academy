@@ -668,6 +668,94 @@ Awaiting guidance."
 
 ---
 
+## SECTION 17: SEEDED LISTINGS — WHAT THEY ARE AND HOW THEY WORK
+
+### What are seeded listings?
+Seeded listings (also called preloaded listings) are businesses that TownConnect adds to your town's directory BEFORE you start selling. They come from publicly available information like Google, Facebook pages, and visible signage. They include the business name, category, and whatever contact details are publicly available — but they're basic entries with no photos, descriptions, or premium features.
+
+### Why does TownConnect seed listings?
+So your directory looks active from day one. When you walk into a business and show them the WhatsApp bot or website, their town already has real businesses listed. You're not selling an empty directory — you're showing them they're already part of it. In Helena's territories (Blouberg, Parklands, Durbanville, Paarl), over 870 businesses were seeded across four areas before she started selling.
+
+### What can residents/customers already do with seeded listings?
+- Find the business by name or category on the website
+- Find the business via the WhatsApp bot
+- See basic contact information (phone number if publicly available)
+- Click to call directly from the listing
+- This means the directory is ALREADY generating visibility for the business before they've paid anything
+
+---
+
+### WHAT BUSINESS OWNERS CAN DO WITH THEIR SEEDED LISTING
+
+Every seeded listing has three options visible on the business detail page: Claim, Edit, and Request Removal.
+
+**1. CLAIM THIS LISTING (the main action)**
+When a business owner clicks "Claim This Listing", they are taken to the Add Business form that is PRE-FILLED with their existing information (business name, phone, category, address). They then complete the form by adding:
+- Their full business description
+- Photos and logo
+- WhatsApp number, email, website, social media links
+- Correct address and map location
+- Any corrections to the pre-filled info
+
+When they submit, their existing listing is UPDATED (not duplicated). This is the conversion moment — they go from a basic free listing to a complete, professional listing. This is also when you discuss paid tier upgrades with them.
+
+The claim form shows a banner: "You're claiming your listing on [Town]Connect. Complete the form below to upgrade your business profile."
+
+**2. EDIT DETAILS**
+The Edit button works the same way as Claim — it takes the business owner to the same pre-filled form where they can update or correct their information. Use this when a business owner says "my phone number is wrong" or "I've moved" — you can show them they can fix it themselves, or you can do it for them as their Area Partner.
+
+**3. REQUEST REMOVAL**
+If a business owner wants their listing removed entirely, the Request Removal option gives them contact details to request removal via:
+- WhatsApp message (pre-filled with the business name and town)
+- Email (pre-filled subject line)
+
+Removal requests are processed within 48 hours. IMPORTANT: If a business asks to be removed, always process it promptly. This is both a legal requirement under POPIA and good business practice. Never argue with a removal request.
+
+---
+
+### HOW TO USE SEEDED LISTINGS IN YOUR SALES APPROACH
+
+This is TownConnect's most powerful sales tool. Here's the proven approach that achieved a 100% interest rate in Vaalwater:
+
+**Step 1 — LEAD WITH "You're already listed"**
+Walk into the business and say: "Hi, I'm [name] from [Town]Connect. You're already listed on our local directory — let me show you."
+
+This changes the conversation from a cold sell to an upgrade conversation. They're already benefiting.
+
+**Step 2 — SHOW THEM LIVE**
+Open the WhatsApp bot or website right there. Search for their business name or their category (like "plumber" or "restaurant"). Let them see themselves listed with their own eyes.
+
+**Step 3 — POINT OUT WHAT'S MISSING**
+Their seeded listing is basic. Show them what a paid listing looks like compared to theirs. A paid listing adds:
+- Professional photos and logo
+- Full business description telling their story
+- Direct WhatsApp link so customers can message them instantly
+- Website, email, and social media links
+- Location on the map with directions
+- Featured/highlighted placement in their category
+- Priority in search results
+
+**Step 4 — THE UPGRADE CONVERSATION**
+"You're already listed and people can find you. For R199/month (or R299 depending on your town), we upgrade your listing with photos, full details, and featured placement. Would you like me to set that up for you right now?"
+
+OR use the claim approach: "Let me show you how to claim your listing — it takes 2 minutes." Walk them through the claim form on their phone. Once they've claimed it and seen how good it looks, the upgrade to a paid tier is natural.
+
+**Why does this work so well?**
+In Vaalwater, Stephen approached 35 businesses using this method. ALL 35 showed interest — a 100% interest rate. You're not asking them to join something unknown. You're showing them they're already part of it and offering to make their listing better.
+
+---
+
+### IMPORTANT RULES ABOUT SEEDED LISTINGS
+
+- All information used for seeding must be publicly available — never use private data
+- If a business asks to be removed, process it within 48 hours — no exceptions
+- Seeded listings include a legal disclosure explaining the listing comes from public info
+- Every town site has a Listing Policy page explaining data sources and business owner rights
+- The goal is to convert seeded listings into paid subscribers — that's your core sales funnel
+- Never misrepresent a seeded listing as something the business signed up for — be honest that it was compiled from public information and they can claim, edit, or remove it
+
+---
+
 ## QUICK REFERENCE
 
 ### Key Numbers
