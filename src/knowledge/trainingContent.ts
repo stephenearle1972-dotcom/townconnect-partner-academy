@@ -12,29 +12,41 @@ South Africans prefer WhatsApp over websites for finding local services. Data co
 ### Languages Supported
 The WhatsApp bot supports English, Afrikaans, and Sepedi. The bot auto-detects the user's language and responds in the same language. This is important for Limpopo towns (Sepedi is widely spoken) and Western Cape/Afrikaans communities.
 
-### Current Scale (February 2026)
-TownConnect operates 11 live sites across 6 provinces. All sites deploy from one shared codebase (multi-tenant architecture). Each town has its own Google Sheet for business listings.
+### Current Scale (April 2026)
+TownConnect operates **21 live sites** across South Africa — a mix of small towns and urban neighbourhoods. Describe the network as **"towns and neighbourhoods"**, not "towns", because several sites (Menlyn, Garsfontein, Bloubergstrand, Parklands, and the Johannesburg suburbs) serve neighbourhoods, not standalone towns.
 
-**Live Towns:**
-| Town | Region | WhatsApp Bot | Notes |
-|------|--------|-------------|-------|
-| Vaalwater | Limpopo | Active | Flagship site, custom domain vaalwaterconnect.co.za |
-| Menlyn | Gauteng | Active | Pretoria East |
-| Port Alfred | Eastern Cape | Active (Deirdre's number) | Operator: Deirdre Simpson |
-| Modimolle | Limpopo | Not yet | — |
-| Blouberg | Western Cape | Active | Premium pricing market |
-| Parklands | Western Cape | Active (Deirdre's number) | Operator: Helena Otto |
-| Garsfontein | Gauteng | Not yet | Pretoria East |
-| Lephalale | Limpopo | Not yet | — |
-| Stellenbosch | Western Cape | Active (Deirdre's number) | Newest |
-| Durbanville | Western Cape | Not yet | — |
-| Paarl | Western Cape | Not yet | — |
+All sites deploy from one shared codebase (multi-tenant architecture). Each site has its own Google Sheet for business listings.
+
+**Original 15 sites — full stack (website + WhatsApp bot + Clubs & Organisations feature):**
+
+| Site | Region | Area Partner |
+|------|--------|--------------|
+| Vaalwater | Limpopo (Waterberg) | Sandra Earle — flagship, custom domain vaalwaterconnect.co.za |
+| Menlyn | Gauteng (Pretoria East) | — |
+| Port Alfred | Eastern Cape | Deirdre Simpson |
+| Modimolle | Limpopo (Waterberg) | — |
+| Bloubergstrand | Western Cape | Helena & JP Otto — premium pricing market |
+| Parklands | Western Cape | Helena & JP Otto — own bot number +27 78 310 8615 |
+| Garsfontein | Gauteng (Pretoria East) | — |
+| Lephalale | Limpopo | — |
+| Stellenbosch | Western Cape | Deirdre Simpson |
+| Durbanville | Western Cape | — |
+| Paarl | Western Cape | — |
+| Potchefstroom | North West | Shaun Christie (Representative, not Area Partner — see "Two Partner Roles") |
+| Vereeniging | Gauteng (Vaal Triangle) | Cassie Christie |
+| Vanderbijlpark | Gauteng (Vaal Triangle) | Cassie Christie |
+| Three Rivers | Gauteng (Vaal Triangle) | Cassie Christie |
+
+**6 Johannesburg sites (added April 2026) — website-only, no bots yet, owner-operated:**
+Sandton, Rosebank, Fourways, Bryanston, Parkhurst, Cresta.
 
 **Key facts:**
-- 11 live sites across 6 provinces
-- 4 active WhatsApp bots (Vaalwater, Blouberg, Menlyn, Parklands — plus Port Alfred and Stellenbosch share Deirdre's number)
+- 21 live sites across South Africa
+- 13 WhatsApp bots live across the 15 original territories
+- The 6 Johannesburg sites do not have bots yet
 - All sites deploy from one shared codebase (multi-tenant architecture)
-- Each town has its own Google Sheet for business listings
+- Each site has its own Google Sheet for business listings
+- Check your town config for your specific bot number
 
 ---
 
@@ -73,11 +85,39 @@ TownConnect operates 11 live sites across 6 provinces. All sites deploy from one
 
 ## SECTION 2: AREA PARTNER BASICS
 
+### Two Partner Roles — Area Partner vs Representative
+TownConnect has **two distinct partnership roles**. It is important not to confuse them.
+
+**Area Partner (AP):**
+- Pays an upfront territory licence fee (see "Area Partner Fee" below).
+- Holds the exclusive or semi-exclusive commercial rights to a town or neighbourhood.
+- Earns **50% of net monthly subscription revenue** from that territory, ongoing, for as long as the subscriber stays.
+- Responsible for local sales, onboarding, and maintaining client relationships.
+- Current examples: Helena & JP Otto (Bloubergstrand and Parklands), Cassie Christie (Vaal Triangle — Vereeniging, Vanderbijlpark, Three Rivers; Cassie is a 55-year-old attorney who also handles CIPC filings for TownConnect), Deirdre Simpson (Port Alfred and Stellenbosch), Sandra Earle (Vaalwater).
+
+**Representative:**
+- Pays **no upfront fee**.
+- Non-exclusive — works within a territory, but TownConnect may appoint an AP for the same territory later.
+- Earns **30% of net revenue** on each subscription they personally introduce.
+- Has right of first refusal to become the AP if TownConnect appoints one for their territory.
+- If the role ends, receives 3 months' trailing commission on existing subscribers they introduced.
+- Current example: Shaun Christie (Potchefstroom representative — Shaun is Cassie Christie's son; they are two different people in two different roles).
+
+**Which role suits whom:**
+- AP suits someone with local sales confidence, a small amount of capital, and the ability to commit full attention to a territory.
+- Representative suits someone testing the water, building confidence, or working part-time alongside other commitments.
+
+**Important — don't confuse these with AP-hired sales reps.** Section 11 describes reps an Area Partner hires under their own umbrella (paid by the AP from the AP's 50% share). A TownConnect Representative (like Shaun) is different — appointed directly by TownConnect on a 30% commission with no upfront fee.
+
 ### What is an Area Partner?
 A local entrepreneur who operates TownConnect in their exclusive territory. They sign up local businesses, manage client relationships, and earn 50% of all subscription revenue.
 
 ### Area Partner Fee
-R19,999 (once-off) for exclusive territorial rights for 24 months.
+**Founding Partner fee:** R19,999 once-off (24 months). This is the original pricing offered to early Area Partners.
+
+**New territories from 2026 onwards** are priced in the range **R20,000–R30,000** depending on market size, population, and commercial density.
+
+Your own fee is set out in your signed Area Partner Agreement — that is the binding figure. If you are asked by a prospective AP what the fee is, say: *"It depends on the territory — between R20,000 and R30,000 for new areas."*
 
 ### What's Included
 - Exclusive territorial rights
@@ -148,7 +188,7 @@ Area Partners who sign up during the growth phase (before 50 towns are live) are
 | Premium | R349/month | R3,839/year | Everything in Standard + social links, up to 20 photos, 4 specials/month, featured in search |
 | Enterprise/Lodge | R599/month | R6,589/year | Everything in Premium + booking/menu links, unlimited photos, sponsored placements |
 
-### Premium Market Pricing (Blouberg, and potentially other high-value suburbs)
+### Premium Market Pricing (Bloubergstrand, and potentially other high-value suburbs)
 
 | Tier | Monthly | Annual |
 |------|---------|--------|
@@ -161,8 +201,14 @@ Area Partners who sign up during the growth phase (before 50 towns are live) are
 ### No Micro Tier
 We do not offer a Micro tier. The minimum package is Standard. Do not mention Micro, R50, or R99 pricing to clients.
 
+### Modimolle Standing Practice — Quote Yearly Alongside Monthly
+For Modimolle leads, always quote yearly pricing alongside monthly (e.g., *"R199/month or R2,189 for the year — saves you a month"*). This is the standing practice unless told otherwise for a specific lead. It reflects local payment preferences.
+
+### WhatsApp Boost (Planned — Not Yet Live)
+A future add-on — **R149–R249/month** — for cross-category sponsored placements (a listing appears in related searches outside its primary category). **Do not quote this to clients yet.** It is planned but not yet built. If a client asks about extra visibility beyond Premium/Enterprise, say it is on the roadmap and you will let them know when it launches.
+
 ### Pricing Note
-Pricing varies by market. Most towns use standard pricing (R199/month for Standard). Premium markets like Blouberg start at R299/month. Always check your town's specific pricing with TownConnect before quoting.
+Pricing varies by market. Most towns use standard pricing (R199/month for Standard). Premium markets like Bloubergstrand start at R299/month. Always check your town's specific pricing with TownConnect before quoting.
 
 ### Community Features Pricing
 These are one-time fees for community listings (not business subscriptions):
@@ -369,6 +415,70 @@ Additional responses:
 
 ---
 
+## SECTION 7B: TWO MARKET SHAPES — CATEGORY-LED vs NAMED-BUSINESS
+
+Research across Vaalwater, Port Alfred, and Modimolle shows that small-town markets split into two patterns, and the sales approach must differ. Characterise the town first, then set the AP's approach. Do not apply a one-size playbook.
+
+### Category-led markets (Port Alfred, larger towns)
+- Residents ask by **category**: *"Anyone know a mechanic?"*
+- Sell to Tier 1 industries with repeated category demand (see Section 7D on Tier 1/2/3).
+- Best outreach window: morning, 9am–noon.
+- Lead line: *"8 residents asked for a mechanic here in the last 90 days. None of them could find a clear answer. If you're listed, that's 8 potential customers you missed."*
+
+### Named-business markets (Vaalwater, smaller towns)
+- Residents ask by **name**: *"Is Jan's Plumbing still operating?"*
+- Walk into named businesses individually. Steady trickle, not flood.
+- Lead line: *"A resident asked about your business on the group yesterday. You're already listed on VaalwaterConnect — want me to show you?"*
+
+### How to tell which shape a town has
+Spend a week reading the active community WhatsApp groups. Count how many questions start with a category word (*"plumber", "mechanic", "vet"*) versus a business name. If category questions dominate, it is category-led. If name questions dominate, it is named-business. Most towns are one or the other — a few are mixed.
+
+---
+
+## SECTION 7C: THE COST-OF-INACTION SALES FRAME
+
+When pitching to a business, don't sell the listing — sell the **cost of not being listed**. Walk the owner through their own numbers.
+
+### Worked example — Port Alfred mechanic
+- **8 documented queries** in 90 days (from WhatsApp group observation).
+- Average mechanic job value (conservative): **R2,000**.
+- At a **30% capture rate** (3 in 10 queries become a paying job): **R4,800 per quarter** revenue opportunity.
+- TC listing cost: **R597 per quarter** (R199/month × 3).
+- ROI at conservative assumption: **8×**.
+
+### How to generalise
+Any business in a Tier 1 industry — mechanic, plumber, electrician, vet, doctor, hairdresser, builder — can be walked through the same calculation with their own ticket size:
+
+1. Number of recent documented queries in their category (from group observation).
+2. Their average job value (ask them).
+3. Conservative capture rate — use 30%.
+4. Multiply the three together: *queries × ticket × capture rate = revenue opportunity they are currently missing*.
+5. Divide by the listing cost for the same period.
+
+**Why this frame works:** It stops the conversation being about price. Price becomes trivial against their own numbers.
+
+---
+
+## SECTION 7D: TIER 1 / TIER 2 / TIER 3 PROSPECT METHODOLOGY
+
+When building a prospect list for a new town, sort businesses into three tiers. **Never approach Tier 3 first.** You burn your morning energy on the hardest conversion.
+
+### Tier 1 — High demand + documented queries
+Industries with **5+ queries in 90 days** in the town's WhatsApp groups. Approach first. Morning calls (9am–noon). Lead with demand data (see Section 7C Cost-of-Inaction).
+
+### Tier 2 — High demand, no queries yet
+Industries residents typically need (plumber, electrician, vet, hairdresser) but which have not appeared in group queries yet. Approach second. Lead with general category proof (*"96% of South Africans use WhatsApp daily — when someone asks for a plumber, you want to be the answer"*).
+
+### Tier 3 — Opportunistic
+Everything else — gift shops, specialty retail, services with narrower demand. Approach via the seeded-listing claim conversation when convenient. Good for filling out the directory, not for primary revenue.
+
+### Rule of thumb for daily routing
+- Before 12pm: Tier 1 only.
+- 12pm–3pm: Tier 2.
+- After 3pm: Tier 3 or admin.
+
+---
+
 ## SECTION 8: WHATSAPP GROUP MARKETING
 
 ### Golden Rule
@@ -420,6 +530,65 @@ If you need more options, our local directory has a few others: save 072 XXX XXX
 
 ---
 
+## SECTION 9B: OPERATOR MODE — \`reply a\` and \`reply e\` (NEW FEATURE)
+
+Operator mode is a special feature on the Vaalwater bot (rolling out to all bots) that lets approved operators — currently Stephen, Sandra, and select Area Partners whose numbers are added to the \`OPERATOR_NUMBERS\` environment variable — get a clean, group-paste-ready reply instead of the normal conversational response.
+
+### How to trigger it
+Send any query to the bot with \` reply a\` (for Afrikaans) or \` reply e\` (for English) at the end.
+
+Examples:
+- *plumber reply e* → English operator-mode reply
+- *loodgieter reply a* → Afrikaans operator-mode reply
+- *looking for a vet reply e* → English, with natural language
+
+### What the reply looks like
+
+**English (** \`reply e\` **) — 1 or more matches:**
+
+\`\`\`
+Listed on VaalwaterConnect:
+
+• {Business Name} — {phone}
+• {Business Name} — {phone}
+
+More: vaalwaterconnect.co.za
+\`\`\`
+
+**Afrikaans (** \`reply a\` **) — 1 or more matches:**
+
+\`\`\`
+Gelys op VaalwaterConnect:
+
+• {Business Name} — {phone}
+• {Business Name} — {phone}
+
+Meer: vaalwaterconnect.co.za
+\`\`\`
+
+**No matches (English):** *No {category} listings on VaalwaterConnect yet.*
+
+**No matches (Afrikaans):** *Nog geen {category} lysings op VaalwaterConnect nie.*
+
+### When to use it
+When a resident asks a question in a WhatsApp group (*"Anyone know a good plumber?"*), an Area Partner can:
+
+1. Send the query to the bot with \`reply e\` or \`reply a\` appended.
+2. Copy the formatted reply.
+3. Paste it into the group — clean, branded, no editing needed.
+
+This turns every community group question into a TownConnect visibility moment.
+
+### What operator mode is NOT
+- Not for normal residents. Only operators whose numbers are whitelisted in \`OPERATOR_NUMBERS\`.
+- Not automatic — the operator still decides whether to paste the reply.
+- Must be **exactly** \` reply a\` or \` reply e\` (with a leading space). Plain \` reply\` does nothing. **There is no \`reply b\`** — the English trigger is \`reply e\`.
+
+### Important boundary
+Using operator mode to paste results into a WhatsApp group **you are a member of** is fine. Using contact details extracted from one group to message people in a **different** group violates POPIA and WhatsApp Terms of Service. Do not do this. See Section 15 for the full POPIA / WhatsApp Terms rules.
+
+---
+
 ## SECTION 10: CLUBS & ORGANIZATIONS (NEW — February 2026)
 
 Every TownConnect site now includes a **Clubs & Organizations** directory alongside business listings. This is a FREE feature — clubs and organizations are listed at no charge.
@@ -439,6 +608,8 @@ Partners should actively collect club/organization info during their community o
 ---
 
 ## SECTION 11: HIRING AND MANAGING SALES REPS
+
+**Don't confuse this with the Representative role described in Section 2.** A *TownConnect Representative* (like Shaun Christie at Potchefstroom) is appointed directly by TownConnect on a 30% commission with no upfront fee. This section, by contrast, is about an **Area Partner hiring their own sales reps** under the AP's umbrella — paid by the AP from the AP's 50% share. Different concept, different contract.
 
 ### When to Hire a Rep
 - Once your town site has 20+ listings and steady subscription revenue
@@ -545,7 +716,7 @@ Facebook: [URL]
 7. Confirm with client
 
 **Receipt Numbering Format:** TC-[TOWN CODE]-[SEQUENTIAL]
-Examples: TC-VAA-0001 (Vaalwater), TC-BLO-0001 (Blouberg), TC-PAL-0001 (Port Alfred)
+Examples: TC-VAA-0001 (Vaalwater), TC-BLG-0001 (Bloubergstrand), TC-PAL-0001 (Port Alfred)
 
 **Record Keeping:** Store photo of receipt AND deposit slip in a monthly folder.
 Folder structure: Google Drive > TownConnect > [Town] > Receipts > 2026-01
@@ -603,6 +774,32 @@ After 1+ months as a happy client:
 - CPA: Fair marketing
 - ECTA: Electronic marketing rules
 Violations can mean fines up to R10 million.
+
+### POPIA and WhatsApp Terms — Non-Negotiables
+
+**What partners MAY do:**
+- Publish a business's **publicly available** contact details (from Google, Facebook, signage, public directories) on a TownConnect listing.
+- Process removal requests within 48 hours.
+- Invite residents to join a TownConnect WhatsApp group they have **opted in** to.
+- Quote the Area Partner's own WhatsApp number to a resident who messaged the partner first.
+
+**What partners MAY NOT do:**
+- Use contact details extracted from a WhatsApp group export to message people in a **different** group. This violates POPIA and WhatsApp Terms of Service.
+- Claim a business is a paying subscriber when it is a seeded listing.
+- Refuse a removal request or delay beyond 48 hours.
+- Collect cash from a business client without express written authorisation from TownConnect.
+
+**Consent language when collecting info in person:**
+*"Can I use these details to publish your listing on our website and WhatsApp directory? You can ask for changes or removal anytime."*
+
+### Marketing Conduct — Explicit Rules
+
+- **Brand-forward, not name-forward.** Say *"The {Town}Connect team"*, not *"Stephen Earle"* or *"[Your Name]"* in outreach copy.
+- **No emojis in outreach.** Almost never. Keep it professional.
+- **Afrikaans-friendly.** If a lead switches to Afrikaans, switch with them. Don't force English.
+- **Always include the bot number.** Every outreach message must include the town's WhatsApp bot link (e.g., *"Chat to our WhatsApp bot: wa.me/27XXXXXXXXX"*).
+- **No overclaiming.** Don't say *"100% of businesses signed up"*. Say *"In the Vaalwater pilot, 35 businesses approached on foot showed interest at R200/month. Results vary by town and approach."*
+- **ECTA opt-out line** in first-contact cold messages: *"If you're not interested, just reply 'no' and I won't message again."*
 
 ### Marketing Conduct - NEVER DO:
 - Bulk WhatsApp spam
@@ -666,6 +863,24 @@ Awaiting guidance."
 - Standard escalations: Within 24 hours
 - Routine requests: Within 48 hours
 
+### Reporting a Bug or Asking for Help
+
+**For urgent issues** (bot down, website down, payment failing):
+- WhatsApp Stephen directly on **068 898 6081**.
+
+**For non-urgent issues** (listing edit, content change, new feature request):
+- Send a WhatsApp message describing exactly what's broken and when it happened.
+- **Always include:**
+  1. Town name.
+  2. URL or bot number affected.
+  3. What you did (the exact steps).
+  4. What you expected to happen.
+  5. What actually happened.
+- A screenshot is worth 100 words. Attach one.
+
+### When all bots go down at the same time
+First thing to check: has **Meta restricted the Facebook account**, or has the **Netlify bill not been paid**? Both of these cause simultaneous outages across every site. **Do not touch code** until both are ruled out — it is almost always a billing or account-access issue, not a code problem.
+
 ---
 
 ## SECTION 17: SEEDED LISTINGS — WHAT THEY ARE AND HOW THEY WORK
@@ -674,7 +889,7 @@ Awaiting guidance."
 Seeded listings (also called preloaded listings) are businesses that TownConnect adds to your town's directory BEFORE you start selling. They come from publicly available information like Google, Facebook pages, and visible signage. They include the business name, category, and whatever contact details are publicly available — but they're basic entries with no photos, descriptions, or premium features.
 
 ### Why does TownConnect seed listings?
-So your directory looks active from day one. When you walk into a business and show them the WhatsApp bot or website, their town already has real businesses listed. You're not selling an empty directory — you're showing them they're already part of it. In Helena's territories (Blouberg, Parklands, Durbanville, Paarl), over 870 businesses were seeded across four areas before she started selling.
+So your directory looks active from day one. When you walk into a business and show them the WhatsApp bot or website, their town already has real businesses listed. You're not selling an empty directory — you're showing them they're already part of it. Across four Western Cape territories — Bloubergstrand, Parklands, Durbanville, and Paarl — over 870 businesses were seeded before sales began. Helena & JP Otto hold Bloubergstrand and Parklands; Durbanville and Paarl are separate Area Partner territories. The point: when a new AP starts, the directory is already populated and looks active to every business they walk into.
 
 ### What can residents/customers already do with seeded listings?
 - Find the business by name or category on the website
@@ -700,6 +915,12 @@ When a business owner clicks "Claim This Listing", they are taken to the Add Bus
 When they submit, their existing listing is UPDATED (not duplicated). This is the conversion moment — they go from a basic free listing to a complete, professional listing. This is also when you discuss paid tier upgrades with them.
 
 The claim form shows a banner: "You're claiming your listing on [Town]Connect. Complete the form below to upgrade your business profile."
+
+**Claim URL format (for reference):**
+
+\`/#add-business?claim=true&name=[Business Name]&phone=[Phone]&category=[sectorId]&address=[Address]&id=[listing id]\`
+
+The form detects \`?claim=true\` in the URL and submits as an **UPDATE** to the existing listing row, not as a new row — preventing duplicates. You can generate a claim link manually by copying the listing's detail-page URL and appending \`?claim=true\` plus the pre-fill fields, but the **Claim This Listing** button on the detail page does this automatically.
 
 **2. EDIT DETAILS**
 The Edit button works the same way as Claim — it takes the business owner to the same pre-filled form where they can update or correct their information. Use this when a business owner says "my phone number is wrong" or "I've moved" — you can show them they can fix it themselves, or you can do it for them as their Area Partner.
@@ -753,6 +974,18 @@ In Vaalwater, Stephen approached 35 businesses using this method. ALL 35 showed 
 - Every town site has a Listing Policy page explaining data sources and business owner rights
 - The goal is to convert seeded listings into paid subscribers — that's your core sales funnel
 - Never misrepresent a seeded listing as something the business signed up for — be honest that it was compiled from public information and they can claim, edit, or remove it
+
+---
+
+## SECTION 18: HOW TOWNCONNECT IS FUNDED (BACKGROUND KNOWLEDGE)
+
+Partners occasionally ask how TownConnect is funded. The honest answer:
+
+- TownConnect has been **profitable within 60 days** of first transaction, with **no external capital**.
+- An **R500,000 Business Partners application** is currently in process (pending).
+- The priority funder sequence, if additional capital is sought, is: **Finfind → Masisizane Fund → Spartan SME Finance → Business Partners → Merchant Capital**.
+
+Keep this general when speaking to a prospective partner. Specific amounts, case numbers, or funder contacts should come from Stephen directly, not from you.
 
 ---
 

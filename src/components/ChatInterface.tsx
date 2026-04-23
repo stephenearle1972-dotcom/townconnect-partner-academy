@@ -114,16 +114,34 @@ export default function ChatInterface() {
                   <span className="text-forest font-medium">"What's the 30-second pitch?"</span>
                 </button>
                 <button
+                  onClick={() => handleSubmit("What's the list first ask later approach?")}
+                  className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
+                >
+                  <span className="text-forest font-medium">"What's the list first ask later approach?"</span>
+                </button>
+                <button
                   onClick={() => handleSubmit("How do I handle cash from reps?")}
                   className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
                 >
                   <span className="text-forest font-medium">"How do I handle cash from reps?"</span>
                 </button>
                 <button
-                  onClick={() => handleSubmit("What's the list first ask later approach?")}
+                  onClick={() => handleSubmit("What is operator mode?")}
                   className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
                 >
-                  <span className="text-forest font-medium">"What's the list first ask later approach?"</span>
+                  <span className="text-forest font-medium">"What is operator mode?"</span>
+                </button>
+                <button
+                  onClick={() => handleSubmit("What's the difference between an Area Partner and a Representative?")}
+                  className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
+                >
+                  <span className="text-forest font-medium">"Area Partner vs Representative"</span>
+                </button>
+                <button
+                  onClick={() => handleSubmit("How do I pitch with demand data?")}
+                  className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-forest hover:shadow-md transition-all"
+                >
+                  <span className="text-forest font-medium">"How do I pitch with demand data?"</span>
                 </button>
               </div>
             </div>
