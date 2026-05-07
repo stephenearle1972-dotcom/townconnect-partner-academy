@@ -589,6 +589,50 @@ Using operator mode to paste results into a WhatsApp group **you are a member of
 
 ---
 
+## SECTION 9C: LEAD NOTIFICATIONS (NEW — April 2026)
+
+When someone searches the TownConnect WhatsApp bot and a paying business is recommended, that business automatically receives a WhatsApp notification within seconds.
+
+### Example notification received by the business
+
+\`\`\`
+Good day
+
+Someone just searched for "photographer" on VaalwaterConnect and your business (Askari Photo) was recommended to them.
+
+View your listing:
+vaalwaterconnect.co.za/#business?id=1
+
+VaalwaterConnect
+\`\`\`
+
+The notification includes a direct link to the business's listing page.
+
+### Important: This feature is for paying subscribers only
+
+Businesses that are seeded (pre-loaded into the directory but not yet paying) do **not** receive notifications. This is a deliberate decision for two reasons:
+
+1. **POPIA compliance** — sending unsolicited WhatsApp messages to businesses with no contractual relationship creates legal risk.
+2. **Platform protection** — a single complaint to Meta could suspend the entire WhatsApp bot fleet.
+
+Once a business subscribes and has a contractual relationship with TownConnect, the notification becomes a service delivery communication and is fully compliant.
+
+### What this means for Area Partners
+
+- Use this feature as a sales tool — tell prospective businesses *"when someone searches for you, you get a WhatsApp notification with a link to your listing"*.
+- Only businesses with a WhatsApp number in their listing receive notifications.
+- The feature works automatically across all 13 active bots, 24 hours a day.
+- No setup required — it activates the moment a business has a paid listing with a WhatsApp number.
+
+### The notification fires when
+
+- A user searches the bot.
+- 1 to 3 matching businesses are found (broad searches with 4+ results do not trigger notifications, to prevent spam).
+- At least one matched business has a WhatsApp number in their listing.
+- The matched business is a paying subscriber (has a description and/or image).
+
+---
+
 ## SECTION 10: CLUBS & ORGANIZATIONS (NEW — February 2026)
 
 Every TownConnect site now includes a **Clubs & Organizations** directory alongside business listings. This is a FREE feature — clubs and organizations are listed at no charge.
